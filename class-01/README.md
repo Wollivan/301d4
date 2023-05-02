@@ -90,6 +90,23 @@ We will spend some time reviewing the concepts from the prework. We will also di
 
 1. Basic React Component Structure:
 
+  as a functional component
+  
+   ```javascript
+   function Something() {
+    return(
+       <section>
+         <h1>Header for Something</h1>
+         <p>Text that is all about Something.<p>
+       </section>
+    )
+   }
+
+   export default Something
+   ```
+
+   as a class component
+   
    ```javascript
    import React from 'react';
 
@@ -106,3 +123,6 @@ We will spend some time reviewing the concepts from the prework. We will also di
 
    export default Something
    ```
+   
+
+
