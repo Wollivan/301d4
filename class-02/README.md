@@ -11,7 +11,6 @@ This class will focus on passing information as `props` from a parent component 
 - Introduction of the code challenge topic
 - Code review of lab assignment
 - Code Demo
-- Bootstrap
 - Lab Preview
 
 ## Learning Objectives
@@ -23,7 +22,6 @@ This class will focus on passing information as `props` from a parent component 
 - JSON vs XML
 - State
 - Props
-- React-Bootstrap
 - Netlify
 - setState
 
