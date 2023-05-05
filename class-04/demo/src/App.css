@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: tomato;
+  font-family: monospace;
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
