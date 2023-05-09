@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: darkolivegreen;
+  color: white;
+  font-family: monospace;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 200px;
+}
