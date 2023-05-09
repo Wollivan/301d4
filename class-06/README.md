@@ -59,9 +59,9 @@ For this class we will explore third party APIs and how to request data from the
    import React from 'react';
    import axios from 'axios';
 
-   class App extends React.Component {
+   function App() {
      // Because it takes an unknown amount of time to get the information, we need to do an async and await in this function:
-     getPokemon = async () => {
+     async function getPokemon() {
        // This will go to the Pokemon API and GET us a bunch of pokemon objects.
        // The 'await' says: "Don't run the next line until I get back with the information that you asked for and then put it in a const called 'pokemon'."
        const pokemonResponse = await axios.get('https://pokeapi.co/api/v2/pokemon');
@@ -70,18 +70,17 @@ For this class we will explore third party APIs and how to request data from the
        const pokemonArray = pokemonResponse.data;
      }
 
-     render() {
-       return(
-         <button onClick={this.getPokemon}>Get Pokemon</button>
-       )
-     }
+    return(
+      <button onClick={this.getPokemon}>Get Pokemon</button>
+    )
+     
    }
    ```
 
 1. Using a try/catch for error handling:
 
    ```javascript
-   getPokemon = async () => {
+   async function getPokemon() {
      try{
        const pokemon = await axios.get('https://pokeapi.co/api/v2/pokemon');
        const pokemonArray = pokemon.data;
