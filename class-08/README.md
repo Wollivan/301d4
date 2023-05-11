@@ -6,9 +6,6 @@ During this class we will use our express server to request information from thi
 
 ## Class Outline
 
-- Warm-up exercise
-- Review code challenges
-- Introduction of the code challenge topic
 - Code review of lab assignment
 - Requesting data from 3rd party APIs via the server
 - Code Demo
