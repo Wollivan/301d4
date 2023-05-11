@@ -14,15 +14,19 @@ app.get("/", (request, response) => {
 app.get("/weather", (request, response) => {
   const { lat, lon, searchQuery } = request.query;
 
-  const city = data.find((item) => {
-    return item.city_name === searchQuery; // && item.lat === lat && item.lon === lon;
-  });
-
   const forecasts = [];
-  city.data.forEach((day) => {
-    const fc = { date: day.valid_date, description: day.weather.description };
-    forecasts.push(fc);
-  });
+  try {
+    const city = data.find((item) => {
+      return item.city_name === searchQuery; // && item.lat === lat && item.lon === lon;
+    });
+
+    city.data.forEach((day) => {
+      const fc = { date: day.valid_date, description: day.weather.description };
+      forecasts.push(fc);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 
   response.json(forecasts);
 });
