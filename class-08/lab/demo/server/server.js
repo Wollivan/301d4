@@ -8,7 +8,7 @@ app.use(cors());
 const data = require("./data/weather.json");
 
 app.get("/", (request, response) => {
-  response.json("You are looking at the root route.");
+  response.status(200).json("You are looking at the root route.");
 });
 
 app.get("/weather", (request, response) => {
@@ -26,9 +26,10 @@ app.get("/weather", (request, response) => {
     });
   } catch (error) {
     console.log(error);
+    response.status(404).json("Location not found");
   }
 
-  response.json(forecasts);
+  response.status(200).json(forecasts);
 });
 
 app.listen(PORT, () => console.log(`App is running on PORT ${PORT}`));
