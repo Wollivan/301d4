@@ -11,9 +11,7 @@ For this class we will dive a little bit deeper into Express and higher level pr
 ## Class Outline
 
 - Warm-up exercise
-- Review code challenges
-- Introduction of the code challenge topic
-- Code review of lab assignment
+- Code review of yesterday's lab assignment
 - Code Demo
 - Lab Preview
 
