@@ -1,0 +1,9 @@
+.cat-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cat-wrap div {
+  width: 20%;
+  border: 1px black solid;
+}
