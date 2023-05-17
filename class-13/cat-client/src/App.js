@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import CatPage from "./pages/CatPage";
 
 function App() {
@@ -52,6 +52,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <h1>CATS</h1>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         <Routes>
           <Route
             path="/"

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home({ cats, form, handleChange, postCat, deleteCat }) {
   return (
     <div>
@@ -13,7 +15,9 @@ export default function Home({ cats, form, handleChange, postCat, deleteCat }) {
         {cats.map((cat) => {
           return (
             <div>
-              <h3>{cat.name}</h3>
+              <h3>
+                <Link to={`/cat/${cat._id}`}>{cat.name}</Link>
+              </h3>
               <p>{cat.colour}</p>
               <p>{cat.location}</p>
               <button onClick={() => deleteCat(cat._id)}>Delete</button>
