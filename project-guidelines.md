@@ -424,7 +424,7 @@ Technical merit is graded based on the following criteria:
   - Works as expected with no bugs
   - Has at least three distinct pages with clear navigation, one of which must be an "About Us" page
   - Has at least two pages that accept and process user input
-  - [Deployed](#deployment) live on the Internet via Netlify
+  - [Deployed](#deployment) live on the Internet via Render
 
 [Back to top](#top)
 
